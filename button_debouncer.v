@@ -1,13 +1,15 @@
-`define holdoff_periods  19'b1111010000100100000 // 5e5 clock periods (@50MHz = 1ms)
 module button_debouncer(clock,
                         button,
+                        holdoff_periods,
                         out);
 input clock;
 input button;
+input [23:0] holdoff_periods;
+
 
 output out;
 
-reg [18:0] time_count = 0;
+reg [23:0] time_count = 0;
 reg out = 0;
 
 always @(posedge clock) begin
@@ -18,7 +20,7 @@ always @(posedge clock) begin
     end
 
     if (out) begin
-        if (time_count == `holdoff_periods) begin           
+        if (time_count == holdoff_periods) begin           
             //out = 0;
             out = button; //fail safer
         end else begin

@@ -18,7 +18,7 @@ reg [23:0] count = 0;
 
 always @(posedge clock_in) begin
     if (run_flag) begin
-        if (count == ((N >> 2)- 1)) begin
+        if (count == ((N >> 1)- 1)) begin
             count = 0;
             clock_out = ~clock_out;
         end else begin
