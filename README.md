@@ -8,7 +8,7 @@ Here's the verilog code for a simple digital oscilloscope with the following spe
 - VGA display output (800x600 @72Hz)
 
 this design has been implemented on a Xilinx Spartan-3AN Starter Kit (http://www.xilinx.com/products/boards-and-kits/hw-spar3an-sk-uni-g.html). Although the top-level verilog module (main.v) uses the specific Spartan-3AN Starter Kit I/O pin names, this design can be easily adapted for most FPGAs. Additional modifications are needed if one uses any ADC other than Linear Technology's LTC1407A-1.
-
+For further details, see [this doc file](docs.pdf).
 
 How to make stuff work on a Xilinx Spartan-3AN Starter Kit: 
 
