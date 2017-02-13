@@ -1,3 +1,5 @@
+// FPGA SCOPE REV 1.0
+
 module main(CLK_50M,
             
             SW[3:0],
