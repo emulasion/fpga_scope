@@ -1,0 +1,13 @@
+# ignore all...
+*
+
+# except
+
+!.gitignore
+!README.md
+docs.pdf
+
+# all verilog source files
+!*.v
+# and all python tools
+!*.py
