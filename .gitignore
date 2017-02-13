@@ -1,13 +1,17 @@
 # ignore all...
 *
 
-# except
-
+# except:
+# git files,
 !.gitignore
 !README.md
 !docs.pdf
 
-# all verilog source files
+# all verilog source files,
 !*.v
-# and all python tools
-!*.py
+!block_ram/*.v
+!fifo/*.v
+
+# and all python tools and related files
+!python_tools*
+
