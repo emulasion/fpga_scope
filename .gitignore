@@ -9,8 +9,10 @@
 
 # all verilog source files,
 !*.v
-!block_ram
-!fifo
+!*.ucf
+
+!block_ram/
+!fifo/
 
 # and all python tools and related files
-!python_tools   
+!python_tools/
