@@ -5,7 +5,7 @@
 
 !.gitignore
 !README.md
-docs.pdf
+!docs.pdf
 
 # all verilog source files
 !*.v
