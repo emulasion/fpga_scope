@@ -1134,6 +1134,6 @@ assign on_char =
     (row == 5 && col == 1)
 )
 ||
-(char_addr == 63) & 0//CHAR: " "
+(char_addr == 63) & 0//CHAR: " " [BLANK]
 ;
 endmodule

@@ -156,7 +156,7 @@ always @ (posedge vga_clk) begin
             G <= 4'b1111;
             B <= 4'b0000;
         end
-        //channel 1 aa layer
+        //channel 1 anti aliasing layer
         else if (display_aa_ch1) begin
             R <= 4'b0111;
             G <= 4'b0111;
@@ -169,13 +169,13 @@ always @ (posedge vga_clk) begin
             G <= 4'b1111;
             B <= 4'b0000;
         end
-        // CHANNEL 2 layer
+        // CHANNEL 2 anti aliasing layer
         else if (display_aa_ch2) begin
             R <= 4'b0000;
             G <= 4'b0111;
             B <= 4'b0000;
         end
-        // trgger time position
+        // horizontal trigger position
         else if (col  == (trig_time + 193) && row < 100) begin
             R <= 4'b0111;
             G <= 4'b0111;

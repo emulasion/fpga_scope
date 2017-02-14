@@ -192,7 +192,7 @@ ch_1 = zip(list(x.astype(int)), list(y.astype(int)))
 #####   
 x = np.linspace(0, 499, num=GRID_WIDTH)
 
-noise = np.random.normal(0, 10, GRID_WIDTH) * (x>360) 
+noise = np.random.normal(0, 20, GRID_WIDTH) * (x>360) 
 y = 75.0 * np.cos(4 * np.pi * x/ GRID_WIDTH) + noise
 ch_2 = zip(list(x.astype(int)), list(y.astype(int)))
 #####   
